@@ -218,6 +218,8 @@ GameObject:
   - component: {fileID: 472377669}
   - component: {fileID: 472377668}
   - component: {fileID: 472377670}
+  - component: {fileID: 472377671}
+  - component: {fileID: 472377672}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -306,6 +308,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 5963644980812260209, guid: 980737017ec16f8428010238853179f9, type: 3}
   _rotateZ: -90
+--- !u!114 &472377671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472377667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aaad068b52f9f846992231e35d2fc3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 4
+--- !u!114 &472377672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472377667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675356f40e511f3439b4deacdc6f6d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jumpForce: 15
+  _maxHeight: 3
+  _isUp: 1
+  _isDown: 0
+  _maxJumpCount: 2
+  _jumpCount: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
