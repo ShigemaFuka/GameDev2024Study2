@@ -12,13 +12,16 @@ public class InstantiateBullet : MonoBehaviour
     {
     }
 
-    void Update()
+    protected virtual void Update()
     {
         if (Input.GetKeyDown(KeyCode.A))
             Generate();
+        OnUpdate();
     }
+    
+    protected virtual void OnUpdate(){}
 
-    void Generate()
+    protected void Generate()
     {
         Instantiate(_bulletPrefab, transform.position, Quaternion.Euler(0, 0, _rotateZ));
     }
