@@ -14,7 +14,7 @@ public class InstantiateBullet : MonoBehaviour
 
     protected virtual void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.F))
             Generate();
         OnUpdate();
     }
