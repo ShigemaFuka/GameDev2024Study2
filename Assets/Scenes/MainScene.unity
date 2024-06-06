@@ -224,10 +224,6 @@ MonoBehaviour:
   _rotateZ: 90
   _interval: 1
   _range: 4
-  _target: {fileID: 0}
-  _offset: {x: 0, y: 0, z: 0}
-  _sqrLen: 0
-  _timer: 0
 --- !u!1 &48139812
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +321,7 @@ GameObject:
   - component: {fileID: 472377670}
   - component: {fileID: 472377671}
   - component: {fileID: 472377672}
+  - component: {fileID: 472377673}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -393,7 +390,7 @@ Transform:
   m_GameObject: {fileID: 472377667}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.19, y: -1.5, z: 0}
+  m_LocalPosition: {x: -2.64, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -443,6 +440,20 @@ MonoBehaviour:
   _isUp: 1
   _isDown: 0
   _maxJumpCount: 2
+--- !u!114 &472377673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472377667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518a1734e9ecf4a47873a068ff70c329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHp: 5
+  _currentHp: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,10 +647,6 @@ MonoBehaviour:
   _rotateZ: 90
   _interval: 1
   _range: 4
-  _target: {fileID: 0}
-  _offset: {x: 0, y: 0, z: 0}
-  _sqrLen: 0
-  _timer: 0
 --- !u!1 &880999229
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,10 +748,6 @@ MonoBehaviour:
   _rotateZ: 90
   _interval: 1
   _range: 4
-  _target: {fileID: 0}
-  _offset: {x: 0, y: 0, z: 0}
-  _sqrLen: 0
-  _timer: 0
 --- !u!1 &1595867111
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,10 +885,6 @@ MonoBehaviour:
   _rotateZ: 90
   _interval: 1
   _range: 4
-  _target: {fileID: 0}
-  _offset: {x: 0, y: 0, z: 0}
-  _sqrLen: 0
-  _timer: 0
 --- !u!1 &1884524176
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,10 +986,6 @@ MonoBehaviour:
   _rotateZ: 90
   _interval: 1
   _range: 4
-  _target: {fileID: 0}
-  _offset: {x: 0, y: 0, z: 0}
-  _sqrLen: 0
-  _timer: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
