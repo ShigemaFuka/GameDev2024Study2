@@ -8,16 +8,16 @@ public class CollisionDetection : MonoBehaviour
 {
     #region 変数
 
-   [SerializeField] private SpriteRenderer _spriteRenderer =default;
-   [SerializeField] private Vector2 _originPoint = default;
-   [SerializeField] private float _width = default;
-   [SerializeField] private float _height = default;
+    private SpriteRenderer _spriteRenderer =default;
+    private Vector2 _originPoint = default;
+    private float _width = default;
+    private float _height = default;
     
-   [SerializeField] private GameObject[] _target = default;
-   [SerializeField] private SpriteRenderer[] _targetSpriteRenderer = default;
-   [SerializeField] private Vector2[] _targetOriginPoint = default;
-   [SerializeField] private float[] _targetWidth = default;
-   [SerializeField] private float[] _targetHeight = default;
+    private GameObject[] _target = default;
+    private SpriteRenderer[] _targetSpriteRenderer = default;
+    private Vector2[] _targetOriginPoint = default;
+    private float[] _targetWidth = default;
+    private float[] _targetHeight = default;
     [SerializeField] private string _targetTagName = default;
 
     #endregion

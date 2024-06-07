@@ -6,13 +6,13 @@ using UnityEngine;
 /// </summary>
 public class CollisionDetection2 : MonoBehaviour
 { 
-    [SerializeField] private SpriteRenderer _spriteRenderer =default;
-    [SerializeField] private Vector2 _originPoint = default;
-    [SerializeField] private float _width = default;
-    [SerializeField] private float _height = default;
+     private SpriteRenderer _spriteRenderer =default;
+     private Vector2 _originPoint = default;
+     private float _width = default;
+     private float _height = default;
     
-    [SerializeField] private GameObject[] _target = default;
-    [SerializeField] private Vector2[] _targetOriginPoint = default;
+     private GameObject[] _target = default;
+     private Vector2[] _targetOriginPoint = default;
     [SerializeField] private string _targetTagName = default;
     
     void Start()

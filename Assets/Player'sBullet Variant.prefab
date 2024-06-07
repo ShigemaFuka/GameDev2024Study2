@@ -60,6 +60,18 @@ PrefabInstance:
       propertyPath: _targetTagName
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8413326341201221369, guid: 980737017ec16f8428010238853179f9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8113208
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413326341201221369, guid: 980737017ec16f8428010238853179f9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8113208
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413326341201221369, guid: 980737017ec16f8428010238853179f9, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6295432598746977425, guid: 980737017ec16f8428010238853179f9, type: 3}
     m_RemovedGameObjects: []
@@ -90,4 +102,6 @@ MonoBehaviour:
   _originPoint: {x: 0, y: 0}
   _width: 0
   _height: 0
+  _target: []
+  _targetOriginPoint: []
   _targetTagName: Enemy
