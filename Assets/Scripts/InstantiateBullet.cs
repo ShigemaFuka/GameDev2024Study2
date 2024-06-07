@@ -6,7 +6,10 @@ using UnityEngine;
 public class InstantiateBullet : MonoBehaviour
 {
     [SerializeField] private GameObject _bulletPrefab = default;
-    [SerializeField] private float _rotateZ = default;
+    [SerializeField, Tooltip("※相対的")] private float _rotateZ = default;
+
+    /// <summary> 生成する弾の回転 </summary>
+    public float RotateZ { get => _rotateZ; set => _rotateZ = value; }
 
     void Start()
     {
@@ -23,6 +26,7 @@ public class InstantiateBullet : MonoBehaviour
 
     protected void Generate()
     {
-        Instantiate(_bulletPrefab, transform.position, Quaternion.Euler(0, 0, _rotateZ));
+        Quaternion relativeRotation = transform.rotation * Quaternion.Euler(0, 0, _rotateZ);
+        Instantiate(_bulletPrefab, transform.position, relativeRotation);
     }
-}
+} 

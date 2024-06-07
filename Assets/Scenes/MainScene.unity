@@ -481,6 +481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 486416228}
   - component: {fileID: 486416227}
+  - component: {fileID: 486416229}
   m_Layer: 0
   m_Name: MousePointer
   m_TagString: Untagged
@@ -518,6 +519,22 @@ Transform:
   - {fileID: 937032302}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &486416229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486416226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bde0e20e4fd8a04291f84af430eb6c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mousePointer: {fileID: 486416227}
+  _target: {fileID: 472377667}
+  _radian: 0
+  _relative: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,7 +918,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 30
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
