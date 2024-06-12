@@ -6,19 +6,15 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
     [SerializeField] private float _speed = default;
-    
-    void Start()
-    {
-    }
 
-    void Update()
+    private void Update()
     {
         var h = Input.GetAxis("Horizontal");
         if (h != 0)
             LRMove(h);
     }
 
-    void LRMove(float value)
+    private void LRMove(float value)
     {
         transform.position += new Vector3(value, 0, 0) * (Time.deltaTime * _speed);
     }

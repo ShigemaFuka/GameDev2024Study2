@@ -14,8 +14,8 @@ public class CollisionDetection2 : MonoBehaviour
      private GameObject[] _target = default;
      private Vector2[] _targetOriginPoint = default;
     [SerializeField] private string _targetTagName = default;
-    
-    void Start()
+
+    private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _width = _spriteRenderer.size.x;
@@ -24,7 +24,7 @@ public class CollisionDetection2 : MonoBehaviour
         _targetOriginPoint = new Vector2[_target.Length];
     }
 
-    void Update()
+    private void Update()
     {
         _originPoint = transform.position;
         for (var i = 0; i < _target.Length; i++)
@@ -39,7 +39,7 @@ public class CollisionDetection2 : MonoBehaviour
         }
     }
 
-    bool Check(int index)
+    private bool Check(int index)
     {
         var xMinA = _originPoint.x - _width / 2;
         var xMaxA = _originPoint.x + _width / 2;

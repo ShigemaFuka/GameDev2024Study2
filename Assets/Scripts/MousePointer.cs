@@ -9,10 +9,6 @@ public class MousePointer : MonoBehaviour
 
     /// <summary> マウスポインタの位置 </summary>
     public Vector3 WorldPoint => _worldPoint;
-    
-    private void Start()
-    {
-    }
 
     private void Update()
     {

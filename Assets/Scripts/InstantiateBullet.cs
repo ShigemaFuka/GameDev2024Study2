@@ -11,10 +11,6 @@ public class InstantiateBullet : MonoBehaviour
     /// <summary> 生成する弾の回転 </summary>
     public float RotateZ { get => _rotateZ; set => _rotateZ = value; }
 
-    void Start()
-    {
-    }
-
     protected virtual void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))

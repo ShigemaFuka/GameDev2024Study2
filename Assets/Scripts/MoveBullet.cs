@@ -6,12 +6,7 @@ public class MoveBullet : MonoBehaviour
 {
     [SerializeField] private float _speed = default;
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
+    private void Update()
     {
         transform.position += transform.TransformDirection(Vector3.up) * (Time.deltaTime * _speed);
     }

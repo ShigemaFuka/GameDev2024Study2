@@ -16,12 +16,12 @@ public class Jump : MonoBehaviour
     [SerializeField] private bool _isDown = default;
     [SerializeField] private int _maxJumpCount = 2;
 
-    void Start()
+    private void Start()
     {
         _groundY = transform.position.y;
     }
 
-    void Update()
+    private void Update()
     {
         if (_isUp)
         {

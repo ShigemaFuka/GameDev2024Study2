@@ -11,11 +11,7 @@ public class Rotate : MonoBehaviour
     private float _radian = default;
     private Vector3 _direction = default;
 
-    void Start()
-    {
-    }
-
-    void Update()
+    private void Update()
     {
         _targetPoint = _target.transform.position;
         _direction = _mousePointer.WorldPoint - _targetPoint;
