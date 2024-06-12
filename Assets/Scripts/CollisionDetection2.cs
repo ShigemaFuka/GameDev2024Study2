@@ -2,7 +2,7 @@ using UnityEngine;
 
 /// <summary>
 /// 矩形と点
-/// 当たり判定と敵へのダメージ処理
+/// 当たり判定と対象へのダメージ処理
 /// </summary>
 public class CollisionDetection2 : MonoBehaviour
 { 
