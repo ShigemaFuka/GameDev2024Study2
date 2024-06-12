@@ -46,6 +46,7 @@ public class CollisionDetection : MonoBehaviour
         _originPoint = transform.position;
         for (var i = 0; i < _target.Length; i++)
         {
+            if (_target[i] == null) continue; // nullなら以下を飛ばす
             _targetOriginPoint[i] = _target[i].transform.position;
             if (Check(i))
             {
