@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8610632345936061828, guid: 980737017ec16f8428010238853179f9, type: 3}
+      propertyPath: _damageValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8610632345936061828, guid: 980737017ec16f8428010238853179f9, type: 3}
+      propertyPath: _targetTagName
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 5963644980812260209, guid: 980737017ec16f8428010238853179f9, type: 3}
       propertyPath: m_Name
       value: Player'sBullet Variant
@@ -72,7 +80,8 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8077235872540209993, guid: 980737017ec16f8428010238853179f9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
