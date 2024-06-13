@@ -8,5 +8,6 @@ public class AddDamageOnHit : MonoBehaviour, IHit
     {
         var iCanDamage = go.GetComponent<ICanDamage>();
         iCanDamage?.AddDamage(_damageValue);
+        Destroy(this);
     }
 }
