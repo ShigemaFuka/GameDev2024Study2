@@ -11,7 +11,7 @@ public class CollisionDetection : MonoBehaviour
 {
     #region 変数
 
-    private SpriteRenderer _spriteRenderer = default;
+    // private SpriteRenderer _spriteRenderer = default;
     private Vector2 _originPoint = default;
     private float _width = default;
     private float _height = default;

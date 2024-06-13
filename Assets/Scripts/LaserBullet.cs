@@ -6,7 +6,6 @@ using UnityEngine;
 public class LaserBullet : MonoBehaviour
 {
     [Header("表示時間"), SerializeField] private float _appear = 0.2f;
-    [Header("ダメージ量"), SerializeField] private int _damage = 3;
     [Header("レーザー"), SerializeField] private GameObject _laserPrefab = default;
     [SerializeField] private InstantiateBullet _instantiateBullet = default;
     private float _pressTimer = default;
