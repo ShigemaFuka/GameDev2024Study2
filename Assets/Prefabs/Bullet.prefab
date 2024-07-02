@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -8610632345936061828}
   - component: {fileID: -2120700727898220504}
   - component: {fileID: -8077235872540209993}
+  - component: {fileID: 3981243551540897743}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: EnemyBullet
@@ -140,6 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damageValue: 1
+  _toDead: 1
 --- !u!114 &-8077235872540209993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,3 +155,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTagName: PlayerLaser
+--- !u!114 &3981243551540897743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5963644980812260209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518a1734e9ecf4a47873a068ff70c329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHp: 1
+  _currentHp: 0
+  _isDestroy: 1
