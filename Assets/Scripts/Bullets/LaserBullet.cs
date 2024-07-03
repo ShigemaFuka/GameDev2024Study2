@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 /// <summary>
@@ -10,6 +11,11 @@ public class LaserBullet : MonoBehaviour
     [SerializeField] private GameObject _laser = default;
     private float _pressTimer = default;
     private float _showTimer = default;
+
+    private void Start()
+    {
+        _laser.SetActive(false);
+    }
 
     private void Update()
     {

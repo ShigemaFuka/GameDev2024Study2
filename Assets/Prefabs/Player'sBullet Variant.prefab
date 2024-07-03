@@ -88,6 +88,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5963644980812260209, guid: 980737017ec16f8428010238853179f9, type: 3}
       insertIndex: -1
       addedObject: {fileID: -6854350637352964356}
+    - targetCorrespondingSourceObject: {fileID: 5963644980812260209, guid: 980737017ec16f8428010238853179f9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -728896346644176426}
   m_SourcePrefab: {fileID: 100100000, guid: 980737017ec16f8428010238853179f9, type: 3}
 --- !u!1 &7409922500164522197 stripped
 GameObject:
@@ -107,3 +110,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTagName: Enemy
+--- !u!114 &-728896346644176426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7409922500164522197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7320c8fc94cb9458e3aeb8de60539c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetTagName: RushEnemy

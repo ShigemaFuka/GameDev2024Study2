@@ -17,10 +17,10 @@ public class CollisionDetection : MonoBehaviour
     private float _height = default;
 
     private List<GameObject> _target = default;
-    private SpriteRenderer[] _targetSpriteRenderer = default;
     private Vector2[] _targetOriginPoint = default;
     private float[] _targetWidth = default;
     private float[] _targetHeight = default;
+    private IHit[] _hits = default;
     [SerializeField] private string _targetTagName = default;
 
     #endregion
@@ -28,19 +28,15 @@ public class CollisionDetection : MonoBehaviour
     private void Start()
     {
         _target = GameObject.FindGameObjectsWithTag(_targetTagName).ToList();
-        _targetSpriteRenderer = new SpriteRenderer[_target.Count];
         _targetOriginPoint = new Vector2[_target.Count];
         _targetWidth = new float[_target.Count];
         _targetHeight = new float[_target.Count];
+        _hits = GetComponents<IHit>();
 
-        // _spriteRenderer = GetComponent<SpriteRenderer>();
         _width = transform.localScale.x;
         _height = transform.localScale.y;
         for (var i = 0; i < _target.Count; i++)
         {
-            // _targetSpriteRenderer[i] = _target[i].GetComponent<SpriteRenderer>();
-            // _targetWidth[i] = _targetSpriteRenderer[i].transform.localScale.x;
-            // _targetHeight[i] = _targetSpriteRenderer[i].transform.localScale.y;
             _targetWidth[i] = _target[i].transform.localScale.x;
             _targetHeight[i] = _target[i].transform.localScale.y;
         }
@@ -64,8 +60,7 @@ public class CollisionDetection : MonoBehaviour
             _targetOriginPoint[i] = _target[i].transform.position;
             if (Check(i))
             {
-                var hits = GetComponents<IHit>();
-                foreach (var hit in hits)
+                foreach (var hit in _hits)
                 {
                     if (_target[i] != null) hit.Hit(_target[i]);
                 }

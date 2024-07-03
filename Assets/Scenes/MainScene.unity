@@ -216,7 +216,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46236148}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba0192378195533409a525bf7fad5e00, type: 3}
   m_Name: 
@@ -297,7 +297,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -5
   m_Sprite: {fileID: -5177388603050735206, guid: 8884154dfe85442a3a3578be807dbcdf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -368,6 +368,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTagName: EnemyBullet
+--- !u!114 &93001913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93001898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddfa4233099ab34499ac53789e890c95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damageValue: 3
+  _toDead: 0
 --- !u!1 &149553224
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,7 +398,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &149553225
 Transform:
   m_ObjectHideFlags: 0
@@ -862,7 +876,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618555584}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba0192378195533409a525bf7fad5e00, type: 3}
   m_Name: 
@@ -1132,7 +1146,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880999229}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba0192378195533409a525bf7fad5e00, type: 3}
   m_Name: 
@@ -1475,13 +1489,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2862168757647588422, guid: 3c5971705bef1bd4e894ce8a73738b4e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763624488366504962, guid: 3c5971705bef1bd4e894ce8a73738b4e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7111325466033642925, guid: 3c5971705bef1bd4e894ce8a73738b4e, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7111325466033642925, guid: 3c5971705bef1bd4e894ce8a73738b4e, type: 3}
+    - {fileID: 2337683265084699330, guid: 3c5971705bef1bd4e894ce8a73738b4e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1494,6 +1514,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6763624488366504962, guid: 3c5971705bef1bd4e894ce8a73738b4e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 93001909}
+    - targetCorrespondingSourceObject: {fileID: 6763624488366504962, guid: 3c5971705bef1bd4e894ce8a73738b4e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 93001913}
   m_SourcePrefab: {fileID: 100100000, guid: 3c5971705bef1bd4e894ce8a73738b4e, type: 3}
 --- !u!1 &1157633075
 GameObject:
@@ -1884,7 +1907,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884524176}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba0192378195533409a525bf7fad5e00, type: 3}
   m_Name: 
@@ -1990,6 +2013,10 @@ PrefabInstance:
     - target: {fileID: 5021512766324675683, guid: dd254d1a4a8b74643830b8a83261f886, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7508593153265969806, guid: dd254d1a4a8b74643830b8a83261f886, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
