@@ -6,11 +6,10 @@ using UnityEngine;
 public class LaserBullet : MonoBehaviour
 {
     [Header("表示時間"), SerializeField] private float _appear = 0.2f;
-    // [Header("レーザー"), SerializeField] private GameObject _laserPrefab = default;
     [SerializeField] private InstantiateBullet _instantiateBullet = default;
+    [SerializeField] private GameObject _laser = default;
     private float _pressTimer = default;
     private float _showTimer = default;
-    [SerializeField] private GameObject _laser = default;
 
     private void Update()
     {
@@ -24,16 +23,13 @@ public class LaserBullet : MonoBehaviour
         {
             _instantiateBullet.enabled = false; // 通常弾を生成させない
             _pressTimer = 0f;
-            // _laser = Instantiate(_laserPrefab, transform);
             _laser.SetActive(true);
         }
 
-        // if (_laserPrefab.activeSelf) _showTimer += Time.deltaTime;
         if (_laser.activeSelf) _showTimer += Time.deltaTime;
 
         if (_showTimer >= _appear) // 表示時間を超えたら
         {
-            // Destroy(_laser);
             _laser.SetActive(false);
             _showTimer = 0f;
             _instantiateBullet.enabled = true;

@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 /// <summary>
@@ -12,8 +11,8 @@ public class Rush : MonoBehaviour, IDestroy
     private Vector3 _offset = default;
     private float _sqrLen = default;
     private Vector3 _targetDirection = default;
-    private bool _haveTargetDirection = default;
-    
+    private bool _haveTargetDirection = default; // 一回だけ対象の方向を取得
+
     private void Start()
     {
         _target = GameObject.FindWithTag("Player");
@@ -21,17 +20,18 @@ public class Rush : MonoBehaviour, IDestroy
 
     private void Update()
     {
-        if (_haveTargetDirection) transform.position = Vector2.MoveTowards(transform.position, _targetDirection * 3f, Time.deltaTime * 10);
-        
+        if (_haveTargetDirection)
+            transform.position = Vector2.MoveTowards(transform.position, _targetDirection * 3f, Time.deltaTime * 10);
+
         _offset = _target.transform.position - transform.position;
         _sqrLen = _offset.sqrMagnitude;
         if (_sqrLen > _range * _range) return; // 範囲外なら以下の処理を行わない
-        
+
         if (_haveTargetDirection) return; // 取得済みなら以下を行わない
         _targetDirection = _target.transform.position - transform.position;
         _haveTargetDirection = true;
     }
-    
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
