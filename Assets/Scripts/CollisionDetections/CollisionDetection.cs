@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -11,7 +10,6 @@ public class CollisionDetection : MonoBehaviour
 {
     #region 変数
 
-    // private SpriteRenderer _spriteRenderer = default;
     private Vector2 _originPoint = default;
     private float _width = default;
     private float _height = default;
@@ -58,12 +56,13 @@ public class CollisionDetection : MonoBehaviour
         {
             if (_target[i] == null) continue; // nullなら以下を飛ばす
             _targetOriginPoint[i] = _target[i].transform.position;
-            if (Check(i))
+            if (!Check(i)) continue; // 接触していないなら以下を飛ばす
+            _target[i].GetComponent<IKnockBack>()?.KnockBackMovement(gameObject);
+            
+            foreach (var hit in _hits)
             {
-                foreach (var hit in _hits)
-                {
-                    if (_target[i] != null) hit.Hit(_target[i]);
-                }
+                if (_target[i] == null) continue;
+                hit.Hit(_target[i]);
             }
         }
     }
