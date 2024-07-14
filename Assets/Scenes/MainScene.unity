@@ -478,11 +478,10 @@ GameObject:
   - component: {fileID: 472377670}
   - component: {fileID: 472377671}
   - component: {fileID: 472377672}
-  - component: {fileID: 472377673}
   - component: {fileID: 472377674}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -599,21 +598,6 @@ MonoBehaviour:
   _isUp: 1
   _isDown: 0
   _maxJumpCount: 2
---- !u!114 &472377673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472377667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 518a1734e9ecf4a47873a068ff70c329, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxHp: 5
-  _currentHp: 0
-  _isDestroy: 0
 --- !u!114 &472377674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1266,6 +1250,8 @@ GameObject:
   - component: {fileID: 961352906}
   - component: {fileID: 961352905}
   - component: {fileID: 961352907}
+  - component: {fileID: 961352909}
+  - component: {fileID: 961352910}
   m_Layer: 0
   m_Name: PlayerParent
   m_TagString: Player
@@ -1332,6 +1318,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _power: 0.01
+--- !u!114 &961352909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961352903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5b4e586525ba1429197a12ea4050c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &961352910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961352903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518a1734e9ecf4a47873a068ff70c329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHp: 5
+  _currentHp: 0
+  _isDestroy: 0
 --- !u!1 &1040385091
 GameObject:
   m_ObjectHideFlags: 0

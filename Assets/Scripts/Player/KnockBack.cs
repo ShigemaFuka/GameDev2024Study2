@@ -2,23 +2,32 @@ using UnityEngine;
 
 public class KnockBack : MonoBehaviour, IKnockBack
 {
-    [SerializeField] private float _power = 0.01f;
+    // 0.0001fとかにするとノックバック中の無敵が分かりやすい
+    [SerializeField] private float _power = 0.01f; 
     private Vector2 _selfPos = default;
     private Vector2 _targetPos = default; // 移動先
     private bool _isReach = default;
     private Vector2 _offset = default;
     private float _sqrLen = default;
     private float _defaultY = default; // 初期位置のY
+    private IInvincible _invincible = default;
 
     private void Start()
     {
         _defaultY = transform.position.y;
         _isReach = true;
+        _invincible = GetComponent<IInvincible>();
     }
 
     private void Update()
     {
-        if (_isReach) return;
+        if (_isReach)
+        {
+            _invincible.IsInvincible = false;
+            return;
+        }
+
+        if (_invincible != null) _invincible.IsInvincible = true; // 無敵モードを真にする
         _offset = _targetPos - (Vector2)transform.position;
         _sqrLen = _offset.sqrMagnitude;
         if (_sqrLen < 0.01) _isReach = true;

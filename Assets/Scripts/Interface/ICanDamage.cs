@@ -1,4 +1,4 @@
-public interface  ICanDamage
+public interface ICanDamage
 {
-    void AddDamage(int damage);
+    public void AddDamage(int damage);
 }
