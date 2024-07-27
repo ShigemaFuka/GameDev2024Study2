@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: _targetTagName
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: -4548674255632967270, guid: 980737017ec16f8428010238853179f9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5963644980812260209, guid: 980737017ec16f8428010238853179f9, type: 3}
       propertyPath: m_Name
       value: Player'sBullet Variant
@@ -82,34 +86,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -8077235872540209993, guid: 980737017ec16f8428010238853179f9, type: 3}
+    - {fileID: -4548674255632967270, guid: 980737017ec16f8428010238853179f9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5963644980812260209, guid: 980737017ec16f8428010238853179f9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -6854350637352964356}
+      addedObject: {fileID: -728896346644176426}
     - targetCorrespondingSourceObject: {fileID: 5963644980812260209, guid: 980737017ec16f8428010238853179f9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -728896346644176426}
+      addedObject: {fileID: 7423551428928190528}
   m_SourcePrefab: {fileID: 100100000, guid: 980737017ec16f8428010238853179f9, type: 3}
 --- !u!1 &7409922500164522197 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5963644980812260209, guid: 980737017ec16f8428010238853179f9, type: 3}
   m_PrefabInstance: {fileID: 3753269537695347620}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &-6854350637352964356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7409922500164522197}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6133fb252f0d34893ccf4ef2d6fea3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _targetTagName: Enemy
 --- !u!114 &-728896346644176426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,3 +115,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTagName: RushEnemy
+--- !u!114 &7423551428928190528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7409922500164522197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc09abc34838d04fb938245f63c7534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isLaser: 0

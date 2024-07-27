@@ -42,8 +42,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1049117742234259182}
   - component: {fileID: 415158274240142102}
-  - component: {fileID: 7111325466033642925}
-  - component: {fileID: 2337683265084699330}
+  - component: {fileID: 406512332180613626}
+  - component: {fileID: 8573111092940033669}
+  - component: {fileID: 5071317467828911697}
+  - component: {fileID: 942763937354709775}
+  - component: {fileID: 1779082876675701058}
+  - component: {fileID: 7924362707299547222}
   m_Layer: 0
   m_Name: Object
   m_TagString: PlayerLaser
@@ -118,20 +122,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7111325466033642925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6763624488366504962}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d7320c8fc94cb9458e3aeb8de60539c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _targetTagName: Enemy
---- !u!114 &2337683265084699330
+--- !u!114 &406512332180613626
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,7 +131,72 @@ MonoBehaviour:
   m_GameObject: {fileID: 6763624488366504962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e096cdc5ba21504badc63921f8b5a31, type: 3}
+  m_Script: {fileID: 11500000, guid: 060dca22fc9c8da48acab6b12ca82526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetTagName: Enemy
+--- !u!114 &8573111092940033669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6763624488366504962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 060dca22fc9c8da48acab6b12ca82526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetTagName: RushEnemy
+--- !u!114 &5071317467828911697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6763624488366504962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 060dca22fc9c8da48acab6b12ca82526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetTagName: EnemyBullet
+--- !u!114 &942763937354709775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6763624488366504962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddfa4233099ab34499ac53789e890c95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _damageValue: 3
+  _toDead: 0
+--- !u!114 &1779082876675701058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6763624488366504962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59b56ec5e538e845b2d6fd968dac3f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7924362707299547222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6763624488366504962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc09abc34838d04fb938245f63c7534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isLaser: 1
